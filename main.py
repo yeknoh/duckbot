@@ -38,14 +38,14 @@ async def on_ready():
     print(f"Number of ducks: {duckCount}")
 
 
-# add a statement to block command in direct messages
+# add a statement to disable command in direct messages
 @client.command()
 @commands.has_permissions(administrator=True)
 async def loadcog(extension):
     client.load_extension(f'cogs.{extension}')
 
 
-# add a statement to block command in direct messages
+# add a statement to disable command in direct messages
 @client.command()
 @commands.has_permissions(administrator=True)
 async def unloadcog(extension):
